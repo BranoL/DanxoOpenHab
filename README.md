@@ -1,0 +1,2 @@
+# DanxoOpenHab
+Domáca automatizácia - OPENHAB

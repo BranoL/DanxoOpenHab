@@ -1,0 +1,6 @@
+rule "System start"
+when
+    System started
+then
+    RW_State_Run.sendCommand(ON)
+end

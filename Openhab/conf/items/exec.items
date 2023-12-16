@@ -1,0 +1,26 @@
+Switch TrigerExec
+
+String RW_State_Out { channel="exec:command:rwstatus:output" }
+Switch RW_State_Run { channel="exec:command:rwstatus:run" }
+
+String RW_Mode_Out { channel="exec:command:reboot_rw_mode:output" }
+Switch RW_Mode_Run { channel="exec:command:reboot_rw_mode:run" }
+
+String RO_Mode_Out { channel="exec:command:reboot_ro_mode:output" }
+Switch RO_Mode_Run { channel="exec:command:reboot_ro_mode:run" }
+
+String Shutdown_Out { channel="exec:command:shutdown_sys:output" }
+Switch Shutdown_Run { channel="exec:command:shutdown_sys:run" }
+
+String Network_AdapterName          { channel="systeminfo:computer:raspi:network#networkDisplayName" }
+String Network_Name                 { channel="systeminfo:computer:raspi:network#networkName" }
+String Network_IP                   { channel="systeminfo:computer:raspi:network#ip" }
+String Network_Mac                  { channel="systeminfo:computer:raspi:network#mac" }
+
+/* Memory information*/
+Number Memory_Available              { channel="systeminfo:computer:raspi:memory#available" }
+Number Memory_Used                   { channel="systeminfo:computer:raspi:memory#used" }
+Number Memory_Total                  { channel="systeminfo:computer:raspi:memory#total" }
+Number Memory_Available_Percent      { channel="systeminfo:computer:raspi:memory#availablePercent" }
+Number Memory_Used_Percent           { channel="systeminfo:computer:raspi:memory#usedPercent" }
+

@@ -1,0 +1,19 @@
+Thing exec:command:rwstatus [
+        command="overstat",
+        interval=0,
+        autorun=false]
+Thing exec:command:reboot_rw_mode [
+        command="sudo /root/reboot-to-writable-mode.sh",
+        interval=0,
+        autorun=false]
+Thing exec:command:reboot_ro_mode [
+        command="sudo /root/reboot-to-readonly-mode.sh",
+        interval=0,
+        autorun=false]
+Thing exec:command:shutdown_sys [
+        command="sudo shutdown now",
+        interval=0,
+        autorun=false]
+Thing systeminfo:computer:raspi [
+        interval_high=60,
+        interval_medium=1800]

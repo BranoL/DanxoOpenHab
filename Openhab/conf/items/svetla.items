@@ -1,0 +1,103 @@
+Switch svetlo_spol {mqtt=">[raspberry:home/lights/all:command:*:default]", autoupdate="false"}
+Switch svetlo1 {mqtt=">[raspberry:home/lights/light_1:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_01)]", autoupdate="false"}
+Switch svetlo2 {mqtt=">[raspberry:home/lights/light_2:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_02)]", autoupdate="false"}
+Switch svetlo3 {mqtt=">[raspberry:home/lights/light_3:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_03)]", autoupdate="false"}
+Switch svetlo4 {mqtt=">[raspberry:home/lights/light_4:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_04)]", autoupdate="false"}
+Switch svetlo5 {mqtt=">[raspberry:home/lights/light_5:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_05)]", autoupdate="false"}
+Switch svetlo6 {mqtt=">[raspberry:home/lights/light_6:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_06)]", autoupdate="false"}
+Switch svetlo7 {mqtt=">[raspberry:home/lights/light_7:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_07)]", autoupdate="false"}
+Switch svetlo8 {mqtt=">[raspberry:home/lights/light_8:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_08)]", autoupdate="false"}
+Switch svetlo9 {mqtt=">[raspberry:home/lights/light_9:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_09)]", autoupdate="false"}
+Switch svetlo10 {mqtt=">[raspberry:home/lights/light_10:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_10)]", autoupdate="false"}
+Switch svetlo11 {mqtt=">[raspberry:home/lights/light_11:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_11)]", autoupdate="false"}
+Switch svetlo12 {mqtt=">[raspberry:home/lights/light_12:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_12)]", autoupdate="false"}
+Switch svetlo13 {mqtt=">[raspberry:home/lights/light_13:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_13)]", autoupdate="false"}
+Switch svetlo14 {mqtt=">[raspberry:home/lights/light_14:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_14)]", autoupdate="false"}
+Switch svetlo15 {mqtt=">[raspberry:home/lights/light_15:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_15)]", autoupdate="false"}
+Switch svetlo16 {mqtt=">[raspberry:home/lights/light_16:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_16)]", autoupdate="false"}
+Switch svetlo17 {mqtt=">[raspberry:home/lights/light_17:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_17)]", autoupdate="false"}
+Switch svetlo18 {mqtt=">[raspberry:home/lights/light_18:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_18)]", autoupdate="false"}
+Switch svetlo19 {mqtt=">[raspberry:home/lights/light_19:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_19)]", autoupdate="false"}
+Switch svetlo20 {mqtt=">[raspberry:home/lights/light_20:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_20)]", autoupdate="false"}
+Switch svetlo21 {mqtt=">[raspberry:home/lights/light_21:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_21)]", autoupdate="false"}
+Switch svetlo22 {mqtt=">[raspberry:home/lights/light_22:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_22)]", autoupdate="false"}
+Switch svetlo23 {mqtt=">[raspberry:home/lights/light_23:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_23)]", autoupdate="false"}
+Switch svetlo24 {mqtt=">[raspberry:home/lights/light_24:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_24)]", autoupdate="false"}
+Switch svetlo25 {mqtt=">[raspberry:home/lights/light_25:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_25)]", autoupdate="false"}
+Switch svetlo26 {mqtt=">[raspberry:home/lights/light_26:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_26)]", autoupdate="false"}
+Switch svetlo27 {mqtt=">[raspberry:home/lights/light_27:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_27)]", autoupdate="false"}
+Switch svetlo28 {mqtt=">[raspberry:home/lights/light_28:command:*:default],<[raspberry:home/lights/out:state:JSONPATH($.sv_28)]", autoupdate="false"}
+Switch scena01 {mqtt=">[raspberry:home/lights/scena_01:command:*:default]", autoupdate="false"}
+Switch scena02 {mqtt=">[raspberry:home/lights/scena_02:command:*:default]", autoupdate="false"}
+Switch scena03 {mqtt=">[raspberry:home/lights/scena_03:command:*:default]", autoupdate="false"}
+
+Contact tlacidlo01 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_01)]", autoupdate="false"}
+Contact tlacidlo02 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_02)]", autoupdate="false"}
+Contact tlacidlo03 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_03)]", autoupdate="false"}
+Contact tlacidlo04 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_04)]", autoupdate="false"}
+Contact tlacidlo05 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_05)]", autoupdate="false"}
+Contact tlacidlo06 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_06)]", autoupdate="false"}
+Contact tlacidlo07 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_07)]", autoupdate="false"}
+Contact tlacidlo08 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_08)]", autoupdate="false"}
+Contact tlacidlo09 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_09)]", autoupdate="false"}
+Contact tlacidlo10 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_10)]", autoupdate="false"}
+Contact tlacidlo11 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_11)]", autoupdate="false"}
+Contact tlacidlo12 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_12)]", autoupdate="false"}
+Contact tlacidlo13 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_13)]", autoupdate="false"}
+Contact tlacidlo14 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_14)]", autoupdate="false"}
+Contact tlacidlo15 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_15)]", autoupdate="false"}
+Contact tlacidlo16 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_16)]", autoupdate="false"}
+Contact tlacidlo17 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_17)]", autoupdate="false"}
+Contact tlacidlo18 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_18)]", autoupdate="false"}
+Contact tlacidlo19 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_19)]", autoupdate="false"}
+Contact tlacidlo20 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_20)]", autoupdate="false"}
+Contact tlacidlo21 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_21)]", autoupdate="false"}
+Contact tlacidlo22 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_22)]", autoupdate="false"}
+Contact tlacidlo23 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_23)]", autoupdate="false"}
+Contact tlacidlo24 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_24)]", autoupdate="false"}
+Contact tlacidlo25 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_25)]", autoupdate="false"}
+Contact tlacidlo26 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_26)]", autoupdate="false"}
+Contact tlacidlo27 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_27)]", autoupdate="false"}
+Contact tlacidlo28 {mqtt="<[raspberry:home/btns/out:state:JSONPATH($.tl_28)]", autoupdate="false"}
+
+Rollershutter Roleta_spol "Všetky rolety" {mqtt=">[raspberry:home/rol/all:command:*:default]"}
+String Roleta_spol_stav "Všetky rolety" {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.All)]"}
+Rollershutter Roleta1 "Roleta 1" {mqtt=">[raspberry:home/rol/rol_1:command:*:default]"}
+String Roleta1_stav "Roleta 1 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta1)]"}
+Rollershutter Roleta2 "Roleta 2" {mqtt=">[raspberry:home/rol/rol_2:command:*:default]"}
+String Roleta2_stav "Roleta 2 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta2)]"}
+Rollershutter Roleta3 "Roleta 3" {mqtt=">[raspberry:home/rol/rol_3:command:*:default]"}
+String Roleta3_stav "Roleta 3 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta3)]"}
+Rollershutter Roleta4 "Roleta 4" {mqtt=">[raspberry:home/rol/rol_4:command:*:default]"}
+String Roleta4_stav "Roleta 4 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta4)]"}
+Rollershutter Roleta5 "Roleta 5" {mqtt=">[raspberry:home/rol/rol_5:command:*:default]"}
+String Roleta5_stav "Roleta 5 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta5)]"}
+Rollershutter Roleta6 "Roleta 6" {mqtt=">[raspberry:home/rol/rol_6:command:*:default]"}
+String Roleta6_stav "Roleta 6 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta6)]"}
+Rollershutter Roleta7 "Roleta 7" {mqtt=">[raspberry:home/rol/rol_7:command:*:default]"}
+String Roleta7_stav "Roleta 7 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta7)]"}
+Rollershutter Roleta8 "Roleta 8" {mqtt=">[raspberry:home/rol/rol_8:command:*:default]"}
+String Roleta8_stav "Roleta 8 " {mqtt="<[raspberry:home/rol/out:state:JSONPATH($.Roleta8)]"}
+
+Number Cas_rol1 {mqtt=">[raspberry:home/rol/rol_1_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta1)]", autoupdate="false"}
+Number Cas_rol2 {mqtt=">[raspberry:home/rol/rol_2_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta2)]", autoupdate="false"}
+Number Cas_rol3 {mqtt=">[raspberry:home/rol/rol_3_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta3)]", autoupdate="false"}
+Number Cas_rol4 {mqtt=">[raspberry:home/rol/rol_4_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta4)]", autoupdate="false"}
+Number Cas_rol5 {mqtt=">[raspberry:home/rol/rol_5_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta5)]", autoupdate="false"}
+Number Cas_rol6 {mqtt=">[raspberry:home/rol/rol_6_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta6)]", autoupdate="false"}
+Number Cas_rol7 {mqtt=">[raspberry:home/rol/rol_7_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta7)]", autoupdate="false"}
+Number Cas_rol8 {mqtt=">[raspberry:home/rol/rol_8_time:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Roleta8)]", autoupdate="false"}
+
+Number Cas_rol_impulz {mqtt=">[raspberry:home/rol/press_rol:command:*:default],<[raspberry:home/rol/time_out:state:JSONPATH($.Impulz)]", autoupdate="false"}
+
+Number Teplota1 {mqtt="<[raspberry:home/temp/out:state:JSONPATH($.Teplota1)]"}
+Number Teplota2 {mqtt="<[raspberry:home/temp/out:state:JSONPATH($.Teplota2)]"}
+Number Teplota3 {mqtt="<[raspberry:home/temp/out:state:JSONPATH($.Teplota3)]"}
+Number Teplota4 {mqtt="<[raspberry:home/temp/out:state:JSONPATH($.Teplota4)]"}
+Number Teplota5 {mqtt="<[raspberry:home/temp/out:state:JSONPATH($.Teplota5)]"}
+
+Number Teplota6 "Teplota 6" {channel="mqtt:topic:MyMQTTBroker:teploty_Thing:Teplota6"}
+Number Teplota7 "Teplota 7" {channel="mqtt:topic:MyMQTTBroker:teploty_Thing:Teplota7"}
+Number Teplota8 "Teplota 8" {channel="mqtt:topic:MyMQTTBroker:teploty_Thing:Teplota8"}
+Number Teplota9 "Teplota 9" {channel="mqtt:topic:MyMQTTBroker:teploty_Thing:Teplota9"}
+Number Teplota10 "Teplota 10" {channel="mqtt:topic:MyMQTTBroker:teploty_Thing:Teplota10"}

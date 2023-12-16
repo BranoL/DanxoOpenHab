@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach (Remote Debug)",
+            "type": "python",
+            "request": "attach",
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "/home/sysop/myproject/",
+            "port": 3000,
+            "secret": "my_secret",
+            "host": "192.168.11.32",
+            "preLaunchTask": "DeployToRpi"
+        }
+    ]
+}

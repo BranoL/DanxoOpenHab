@@ -1,0 +1,11 @@
+Bridge mqtt:broker:MyMQTTBroker "Mosquitto" [ host="127.0.0.1", secure=false, clientID="openHAB2"]
+{
+  Thing topic teploty_Thing "Teploty" @ "Môj domček" {
+   Channels:
+     Type number : Teplota6 "Teplota 6" [stateTopic="home/temp/out", transformationPattern="JSONPATH:$.Teplota1"]
+     Type number : Teplota7 "Teplota 7" [stateTopic="home/temp/out", transformationPattern="JSONPATH:$.Teplota2"]
+     Type number : Teplota8 "Teplota 8" [stateTopic="home/temp/out", transformationPattern="JSONPATH:$.Teplota3"]
+     Type number : Teplota9 "Teplota 9" [stateTopic="home/temp/out", transformationPattern="JSONPATH:$.Teplota4"]
+     Type number : Teplota10 "Teplota 10" [stateTopic="home/temp/out", transformationPattern="JSONPATH:$.Teplota5"]
+ }
+}

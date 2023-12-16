@@ -1,0 +1,22 @@
+rule "System start"
+when
+    System started
+then
+    RW_State_Run.sendCommand(ON)
+end
+
+rule "Vianocne osvetlenie - ZAP"
+when
+    Time cron "0 30 04 ? * * *" or
+    Time cron "0 30 15 ? * * *"
+then
+    svetlo25.sendCommand(ON)
+end
+
+rule "Vianocne osvetlenie - VYP"
+when
+    Time cron "0 30 08 ? * * *" or
+    Time cron "0 59 23 ? * * *"
+then
+    svetlo25.sendCommand(OFF)
+end

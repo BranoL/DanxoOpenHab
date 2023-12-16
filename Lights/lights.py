@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # coding=UTF-8
 """
 ================================================
@@ -1110,7 +1110,7 @@ try:
 
     scena1 = [svetlo03,svetlo06,svetlo11] # scéna svetiel
     skupina1 = skupiny_svetiel(vstup07,scena1,"Obyvacka kupelna LED") # Konfiguracia scény
-    scena2 = [svetlo17, svetlo22]
+    scena2 = [svetlo17, svetlo22, svetlo26]
     skupina2 = skupiny_svetiel(vstup21,scena2,"Vonkajsok")
     # scena3 = [svetlo25,svetlo26]
     # skupina3 = skupiny_svetiel(vstup25,scena3,"Test")
@@ -1123,21 +1123,21 @@ except:
 try:
     g_rolety = []
     rolety_spol = rolety_spolocne(gpioj,zall,oall)
-    roleta1 = rolety(gpiob,gpioa,z1,o1,r_on1,r_za1,"Roleta1")
+    roleta1 = rolety(gpiob,gpioa,z1,o1,r_on1,r_za1,"Roleta1") # Kuchyna
     g_rolety = g_rolety + [roleta1]
-    roleta2 = rolety(gpiob,gpioa,z2,o2,r_on2,r_za2,"Roleta2")
+    roleta2 = rolety(gpiob,gpioa,z2,o2,r_on2,r_za2,"Roleta2") # Jedáleň
     g_rolety = g_rolety + [roleta2]
-    roleta3 = rolety(gpiob,gpioa,z3,o3,r_on3,r_za3,"Roleta3")
+    roleta3 = rolety(gpiob,gpioa,z3,o3,r_on3,r_za3,"Roleta3") # Obývačka
     g_rolety = g_rolety + [roleta3]
-    roleta4 = rolety(gpiob,gpioa,z4,o4,r_on4,r_za4,"Roleta4")
+    roleta4 = rolety(gpiob,gpioa,z4,o4,r_on4,r_za4,"Roleta4") # WC
     g_rolety = g_rolety + [roleta4]
-    roleta5 = rolety(gpiod,gpioc,z5,o5,r_on5,r_za5,"Roleta5")
+    roleta5 = rolety(gpiod,gpioc,z6,o6,r_on5,r_za5,"Roleta5") # Kúpeľňa
     g_rolety = g_rolety + [roleta5]
-    roleta6 = rolety(gpiod,gpioc,z6,o6,r_on6,r_za6,"Roleta6")
+    roleta6 = rolety(gpiod,gpioc,z7,o7,r_on6,r_za6,"Roleta6") # Spálňa
     g_rolety = g_rolety + [roleta6]
-    roleta7 = rolety(gpiod,gpioc,z7,o7,r_on7,r_za7,"Roleta7")
+    roleta7 = rolety(gpiod,gpioc,z5,o5,r_on8,r_za8,"Roleta7") # Detská izba
     g_rolety = g_rolety + [roleta7]
-    roleta8 = rolety(gpiod,gpioc,z8,o8,r_on8,r_za8,"Roleta8")
+    roleta8 = rolety(gpiod,gpioc,z8,o8,r_on7,r_za7,"Roleta8") # Izba
     g_rolety = g_rolety + [roleta8]
 except:
     pass
